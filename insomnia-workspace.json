@@ -1,0 +1,131 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2020-01-01T00:00:00.000Z",
+  "__export_source": "insomnia.desktop.app:v2021.1.1",
+  "resources": [
+    {
+      "_id": "wrk_0545e2f8a8994daf9ac7fc85eef652a4",
+      "parentId": null,
+      "modified": 1600000000000,
+      "created": 1600000000000,
+      "name": "Ignite - FinApi",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_cc5d53fb2914459aab80cfddc7e12c1b",
+      "parentId": "wrk_0545e2f8a8994daf9ac7fc85eef652a4",
+      "modified": 1600000000000,
+      "created": 1600000000000,
+      "url": "{{ _.baseURL }}/account",
+      "name": "Create",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"cpf\":\"33333333333\",\n\t\"name\": \"Ulisses marcondes de sousa\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_383eee9876ea46cc8a276e45578b8d7f"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1616527525850,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_f3dcaea6e4a649efbba9ef077e50ea84",
+      "parentId": "wrk_0545e2f8a8994daf9ac7fc85eef652a4",
+      "modified": 1600000000000,
+      "created": 1600000000000,
+      "url": "{{ _.baseURL }}/statement",
+      "name": "Statement",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "cpf",
+          "value": "33333333333",
+          "description": "",
+          "id": "pair_65b048d1add54849bdea46d2582a9306"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1616529880690,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "jar_9cd32e4f4b9fcd7ab91ab752329d759d31f089fb",
+      "parentId": "wrk_0545e2f8a8994daf9ac7fc85eef652a4",
+      "modified": 1600000000000,
+      "created": 1600000000000,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_3472a435c4f34bd884d98368c4a27b0b",
+      "parentId": "wrk_0545e2f8a8994daf9ac7fc85eef652a4",
+      "modified": 1600000000000,
+      "created": 1600000000000,
+      "fileName": "Ignite - FinApi",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    },
+    {
+      "_id": "env_8efea2f72db2487e803eb4d81a8c40e9",
+      "parentId": "env_9cd32e4f4b9fcd7ab91ab752329d759d31f089fb",
+      "modified": 1600000000000,
+      "created": 1600000000000,
+      "name": "FinApi",
+      "data": {
+        "baseURL": "http://localhost:3000"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "baseURL"
+        ]
+      },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1616527549890,
+      "_type": "environment"
+    },
+    {
+      "_id": "env_9cd32e4f4b9fcd7ab91ab752329d759d31f089fb",
+      "parentId": "wrk_0545e2f8a8994daf9ac7fc85eef652a4",
+      "modified": 1600000000000,
+      "created": 1600000000000,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1616527457961,
+      "_type": "environment"
+    }
+  ]
+}
